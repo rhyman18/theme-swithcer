@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganti Tema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark-subtle" id="body">
+    <nav class="navbar navbar-expand-lg bg-light sticky-top" data-bs-theme="light" id="navSwitch">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TEMA SWITCHER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit" id="navBtn">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3 mt-sm-4 mb-3 mb-sm-4">
+        <div class="row">
+            <div class="col-sm-6 mb-3">
+                <div class="card text-bg-light" id="card1">
+                    <div class="card-header">Tema Dark</div>
+                    <div class="card-body">
+                        <p class="card-text">Ganti Tema Menjadi Warna Dark dengan Mengklik Tombol di Bawah.</p>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="lightDark" onclick="lightDarkTheme()">
+                            <label class="form-check-label" for="lightDark" id="lightDarkLabel">Off</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <div class="card text-bg-light" id="card2">
+                    <div class="card-header">Tema Biru</div>
+                    <div class="card-body">
+                        <p class="card-text">Ganti Tema Menjadi Warna Biru dengan Mengklik Tombol di Bawah.</p>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="biru" onclick="biruTheme()">
+                            <label class="form-check-label" for="biru" id="biruLabel">Off</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 mb-3">
+                <div class="card text-bg-light" id="card3">
+                    <div class="card-header">Tema Merah</div>
+                    <div class="card-body">
+                        <p class="card-text">Ganti Tema Menjadi Warna Merah dengan Mengklik Tombol di Bawah.</p>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" onclick="merahTheme()" id="merah">
+                            <label class="form-check-label" for="merah" id="merahLabel">Off</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card text-bg-light" id="card4">
+                    <div class="card-header">Tema Hijau</div>
+                    <div class="card-body">
+                        <p class="card-text">Ganti Tema Menjadi Warna Hijau dengan Mengklik Tombol di Bawah.</p>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="hijau" onclick="hijauTheme()">
+                            <label class="form-check-label" for="hijau" id="hijauLabel">Off</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card5">
+            <h5 class="card-header">Content</h5>
+            <div class="card-body">
+              <h5 class="card-title">Lorem Ipsum</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dignissim orci, at vehicula risus. Fusce a dictum felis, ut lobortis lorem. Vestibulum fringilla, neque eu cursus accumsan, nisl neque ultrices odio, ac congue lacus dui eget erat. Sed imperdiet est in lectus dignissim consequat. Vivamus consequat consectetur libero ac porta. Integer pulvinar eleifend mi. Aliquam massa enim, fermentum ac finibus eget, aliquam at lorem. Integer sit amet dictum elit. Mauris in faucibus nulla, ac congue sapien.</p>
+              <p class="card-text">Proin cursus pharetra risus, vitae dapibus nisl convallis ut. In libero odio, tincidunt vel posuere in, cursus viverra arcu. Nullam venenatis eros vel tortor dapibus bibendum. Nulla viverra, ante in efficitur consequat, elit nisl mollis sapien, eget tincidunt urna augue ac dolor. Curabitur facilisis, nulla non feugiat efficitur, metus mi sollicitudin ex, rutrum interdum lacus urna fermentum dolor. Praesent id eleifend augue, blandit dictum leo. Pellentesque posuere orci ac leo dictum, non finibus nisi faucibus. Vivamus eget lectus nec urna porta scelerisque. Nullam semper nisl in tortor finibus mollis.</p>
+              <p class="card-text">Pellentesque id arcu viverra, auctor purus vitae, vulputate odio. In eros orci, volutpat ac leo eget, hendrerit fermentum augue. Sed arcu turpis, dignissim non ex non, molestie mollis diam. Vestibulum lacinia, justo ultrices fermentum vestibulum, magna ligula vehicula sapien, vitae aliquet neque metus a ligula. Mauris consequat ligula massa, quis congue augue lacinia quis. Praesent et pellentesque augue. Morbi interdum, nibh dignissim tincidunt accumsan, leo risus maximus eros, elementum sagittis erat nibh eu dolor. Maecenas ac dolor non nunc dapibus imperdiet ac quis dolor.</p>
+              <p class="card-text">Nulla gravida nunc a ex auctor sagittis. Nunc et tincidunt libero, vitae feugiat enim. Sed sit amet sapien id turpis ornare maximus vel quis mi. Pellentesque sollicitudin ultricies ligula, non sagittis lectus lobortis eu. In massa diam, efficitur a nibh sit amet, vulputate rutrum orci. Nullam hendrerit nisi nisl, eu posuere eros ornare ac. Integer at leo velit. Mauris at sem quis est commodo dapibus. Nullam sollicitudin vel nisl non lacinia. Ut tristique est lacus, sit amet rhoncus odio volutpat in. Phasellus tristique mauris euismod, aliquet eros eget, fringilla nisl. Aenean sagittis orci eu dui faucibus, et molestie felis molestie. Ut faucibus neque nisl. Maecenas id velit dui. Phasellus volutpat eget ex vitae congue. Duis sed enim ipsum.</p>
+              <p class="card-text">Nam commodo cursus blandit. Morbi rutrum finibus sem, ac rhoncus massa. Vestibulum mattis, tortor in ullamcorper consequat, nisi diam pharetra velit, eu dignissim sem dolor at lacus. Maecenas feugiat vulputate tellus, vel facilisis augue efficitur sit amet. In et turpis nisl. Etiam ac pharetra justo. Sed viverra felis in lectus condimentum hendrerit. Maecenas fringilla odio at dolor fermentum laoreet.</p>
+              <a href="#" id="btnCard5" class="btn btn-outline-dark">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    <div id="footer" class="sticky-bottom bg-light text-center pt-3 pb-3">Dibuat Oleh Ari Budiman | 2023</div>
+    <script type="text/javascript" src="style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
